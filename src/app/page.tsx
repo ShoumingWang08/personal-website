@@ -19,7 +19,7 @@ export default function Home() {
             />
           </div>
           <p className="text-3xl text-blue-300 font-semibold mb-4">
-            Student • Scholar • Athlete
+            Student • Scholar • Athlete • Developer
           </p>
           <p className="text-xl text-gray-300">
             High School Senior | Age 17
