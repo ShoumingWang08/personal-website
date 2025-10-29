@@ -11,8 +11,9 @@ export function generateStaticParams() {
   return Array.from({ length: totalPages - 1 }, (_, i) => ({ page: String(i + 2) }));
 }
 
-export default function BlogPaged({ params }: { params: { page: string } }) {
-  const pageNum = Number(params.page) || 1;
+export default async function BlogPaged({ params }: { params: Promise<{ page: string }> }) {
+  const { page } = await params;
+  const pageNum = Number(page) || 1;
   const { posts, totalPages, current } = getPaginatedPosts(pageNum, PER_PAGE, {
     includeDrafts: process.env.NODE_ENV !== "production",
   });
