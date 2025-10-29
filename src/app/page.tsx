@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Avatar from "@/components/Avatar";
 
 export default function Home() {
   return (
@@ -10,13 +10,7 @@ export default function Home() {
             Matt Wang
           </h1>
           <div className="flex justify-center mb-6">
-            <Image
-              src="/matt-profile.jpg"
-              alt="Matt Wang Profile Picture"
-              width={200}
-              height={200}
-              className="rounded-full border-4 border-blue-300 shadow-2xl object-cover"
-            />
+            <Avatar />
           </div>
           <p className="text-3xl text-blue-300 font-semibold mb-4">
             Student • Scholar • Athlete • Developer • Thinker
