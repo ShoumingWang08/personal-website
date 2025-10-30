@@ -1,4 +1,5 @@
 import Avatar from "@/components/Avatar";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -131,20 +132,27 @@ export default function Home() {
             </h2>
             <div className="text-white text-lg leading-relaxed">
               <p className="mb-4">
-                I'm a 17-year-old high school senior with a passion for learning and excellence. 
-                My academic journey has been marked by consistent achievement, maintaining a 4.12 GPA 
-                and earning top scores on standardized tests including a 1520 SAT.
+                I am a 17-year-old high school senior with a passion for learning and understanding. I have maintained a 4.12 GPA and gotten a 1520 super score on the SAT. Beyond academics, I am deeply involved in philosophy, cofounding my high school’s ethics team in the National High School Ethics Bowl. Moreover, I debate others and research about epistemology in my free time. My love for debating and creating reflects my commitment to learn and expanding my horizons, and my desire to continuously grow.
               </p>
-              <p className="mb-4">
-                Beyond academics, I'm deeply engaged in diverse interests that shape my worldview. 
-                I find joy in the strategic thinking of basketball and ping pong, the creative expression 
-                of piano, and the intellectual rigor of mathematics, computer science, and philosophy.
-              </p>
-              <p>
-                My love for debating reflects my commitment to understanding multiple perspectives 
-                and communicating ideas effectively. I believe in the power of education to transform 
-                lives and am excited about the opportunities ahead in my academic and personal journey.
-              </p>
+            </div>
+
+            <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <Link href="/blog/basketball-lessons-for-life" className="block rounded-xl border border-blue-400/30 bg-blue-500/10 p-5 hover:bg-blue-500/20 transition">
+                <h3 className="text-xl font-semibold text-white">Basketball</h3>
+                <p className="mt-1 text-blue-100 text-sm">Awareness and respect for the craft.</p>
+              </Link>
+              <Link href="/blog/my-philosophy-on-learning" className="block rounded-xl border border-indigo-400/30 bg-indigo-500/10 p-5 hover:bg-indigo-500/20 transition">
+                <h3 className="text-xl font-semibold text-white">My Philosophy on Learning</h3>
+                <p className="mt-1 text-indigo-100 text-sm">Keep moving forward, keep asking.</p>
+              </Link>
+              <Link href="/blog/the-art-of-mathematics" className="block rounded-xl border border-purple-400/30 bg-purple-500/10 p-5 hover:bg-purple-500/20 transition">
+                <h3 className="text-xl font-semibold text-white">The Art of Mathematics</h3>
+                <p className="mt-1 text-purple-100 text-sm">Climbing the staircase of logic.</p>
+              </Link>
+              <Link href="/blog/my-journey-to-computer-science" className="block rounded-xl border border-cyan-400/30 bg-cyan-500/10 p-5 hover:bg-cyan-500/20 transition">
+                <h3 className="text-xl font-semibold text-white">Computer Science</h3>
+                <p className="mt-1 text-cyan-100 text-sm">Curiosity in a digital world.</p>
+              </Link>
             </div>
           </div>
         </div>
