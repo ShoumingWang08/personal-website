@@ -1,11 +1,9 @@
 ---
-title: "My Journey to Computer Science"
+title: "Computer Science"
 date: "2025-01-12"
 description: "How curiosity led me to code and build."
 ---
 
-I started with puzzles and logic games long before I knew what an algorithm was. Over time, that curiosity brought me to programming—where ideas turn into tools people use.
-
-Today, I write code to learn, to solve problems, and to create.
+Computer Science is so prominent in todays age, its almost impossible not be curious about them. However, even after learning the basics, my curiosity still hasn’t been quenched and I will continue to research and study about computers.
 
 
